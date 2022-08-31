@@ -24,7 +24,7 @@ export PATH="$path/bin:$PATH"
 if [ "${RUNNER_OS}" == "Windows" ]; then
     poetry_="$path/bin/poetry.exe"
 else
-    poetry_=poetry
+    poetry_="$path/bin/poetry"
 fi
 
 # Expand any "~" in VIRTUALENVS_PATH
